@@ -28,10 +28,6 @@
 		hamburgerIcon.removeClass('is-active');
 	});
 	
-	$('.hamburger.is-active').on('click', function() {
-		AOS.refresh();
-	});
-	
 	$('.contactLink a').click(function(e) {
 		e.preventDefault();
 		
@@ -135,6 +131,10 @@
 				'data-aos': 'fade-down',
 				'data-aos-delay': 250 - (counter++ * 100),
 			}).removeClass('aos-animate');
+		});
+		
+		$('.hamburger.is-active').on('click', function() {
+			AOS.refresh();
 		});
 	});
 	
