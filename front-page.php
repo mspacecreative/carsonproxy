@@ -25,10 +25,12 @@ get_header(); ?>
 							</div>
 							
 							<!-- ARROW DOWN -->
-							<div class="arrowDown">
-								<a href="#rightColumn">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down-purple.svg">
-								</a>
+							<div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="arrowDown">
+									<a href="#rightColumn">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down-purple.svg">
+									</a>
+								</div>
 							</div>
 							<!-- / ARROW DOWN -->
 								
