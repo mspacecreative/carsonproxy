@@ -23,19 +23,19 @@ get_header(); ?>
 								<h1 class="descriptor">We are a full-service shareholder communications and corporate governance consulting firm that works across all sectors in the Canadian market.</h1>
 								<!-- / DESCRIPTOR -->
 							</div>
+							
+							<!-- ARROW DOWN -->
+							<div class="arrowDown">
+								<a href="#rightColumn">
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down-purple.svg">
+								</a>
+							</div>
+							<!-- / ARROW DOWN -->
 								
 							<!--
 							<div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							
 								<h2 class="learnMore"><a href="#" class="bioToggle">Learn more</a></h2>
-								
-								 ARROW DOWN 
-								<div class="arrowDown">
-									<a href="#rightColumn">
-										<img src="<?php echo get_template_directory_uri(); ?>/assets/img/icons/arrow-down-purple.svg">
-									</a>
-								</div>
-								 / ARROW DOWN
 							</div>
 							-->
 							
