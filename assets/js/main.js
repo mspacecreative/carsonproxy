@@ -38,6 +38,8 @@
 	
 	// MOBILE MENU
 	$('.hamburger').click(function(e) {
+		e.preventDefault();
+		toggleMenu();
 		
 		// ADD ANIMATION TO MENU ITEMS
 		menuItem.each(function() {
@@ -45,9 +47,6 @@
 				menuItem.toggleClass('aos-animate');
 			}, 400);
 		});
-		
-		e.preventDefault();
-		toggleMenu();
 	});
 	
 	$('.menu-item a').click(function() {
@@ -131,10 +130,6 @@
 				'data-aos': 'fade-down',
 				'data-aos-delay': 250 - (counter++ * 100),
 			}).removeClass('aos-animate');
-		});
-		
-		$('.hamburger.is-active').on('click', function() {
-			AOS.refresh();
 		});
 	});
 	
