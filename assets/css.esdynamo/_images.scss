@@ -1,0 +1,67 @@
+.topLeftTexture img {
+	opacity: .5;
+}
+.bottomRightTexture {
+	bottom: 0;
+	right: 0;
+	position: absolute;
+}
+.homeSplitLeft {
+	position: relative;
+}
+.bottomLeftTexture {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 25%;
+}
+.social {
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	border-radius: 100%;
+	display: inline-flex;
+    align-items: center;
+	justify-content: center;
+	transition: 0.25s ease-in-out;
+	position: relative;
+    top: -1px;
+	text-decoration: none;
+}
+.social .fa {
+	font-size: 18px;
+	text-align: center;
+	color: $brandPurple;
+}
+.social:hover {
+	background-color: $brandGrey;
+	transition: 0.25s ease-in-out;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	width: 100%;
+}
+.clientListContainer img {
+	padding: 20px 40px;
+}
+.clientListContainer .col {
+	padding-bottom: 3em;
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.brandContainer {
+	max-width: 250px;
+}
+.smaller {
+	max-width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.small {
+	max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+}

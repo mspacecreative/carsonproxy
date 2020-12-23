@@ -1,0 +1,280 @@
+h1 {
+	color: $brandGrey;
+	font-weight: 300;
+}
+.light h1, .light h2, .light h3, .light h4, .light h5, .light h6, .light p, .light ul, .light ol {
+	color: #fff;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+ul {
+	padding: 0 0 0 18px;
+	margin: 0 0 20px;
+}
+.descriptor {
+	margin-top: auto;
+	margin-bottom: 0;
+	text-align: right;
+	max-width: 450px;
+	font-size: 2.25em;
+	line-height: 1.5em;
+	margin-left: auto;
+	color: $brandPurple;
+}
+.learnMore {
+	text-align: right;
+}
+.light h2,.light h3 {
+	color: rgba(255, 255, 255, .5);
+}
+p {
+	line-height: 1.56em;
+	margin-top: 0;
+}
+p:last-of-type {
+	margin-bottom: 0;
+}
+.col > ul:first-of-type {
+	margin-bottom: 0;
+}
+h2 {
+	margin-top: 30px;
+	font-weight: 400;
+}
+.colInner > h2:first-of-type {
+	margin-top: 0;
+}
+.col a {
+	color: $brandGrey;
+	text-decoration: none;
+}
+.inlineList {
+	padding: 0;
+	margin: 0;
+}
+.inlineList li {
+	display: inline-block;
+	margin-right: 20px;
+}
+.inlineList li a {
+	font-size: 1em;
+}
+.arrowRightList {
+	list-style: none;
+	padding-left: 0;
+}
+.arrowRightList li {
+	position: relative;
+	//padding-left: 30px;
+	margin-bottom: 20px;
+	font-size: 2em;
+}
+/*
+.arrowRightList li::before {
+	content: "";
+	background-image: url(../img/icons/bullet.svg);
+	width: 14px;
+	height: 14px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 0;
+	top: 15px;
+}
+*/
+.innerCircle {
+	fill: $brandPurple;
+}
+.spanHeight {
+	height: 100%;
+}
+.spanHeight .col:nth-child(2) {
+	margin-top: auto;
+}
+
+// LEARN MORE
+.bioToggle {
+	position: relative;
+	display: inline-block;
+	padding-right: 30px;
+}
+.formToggle {
+	position: relative;
+	display: inline-block;
+	padding-right: 30px;
+}
+.bioToggle::before, .formToggle::after {
+	content: "";
+	background-image: url(../img/icons/arrow-right-grey.svg);
+	width: 20px;
+	height: 20px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	right: 0;
+	top: 50%;
+    margin-top: -8px;
+}
+.bioOverlay, .formOverlay {
+	position: fixed;
+	top: 0;
+	//left: 50%;
+	left: 0;
+	z-index: 999999;
+	display: none;
+	//width: 50%;
+	width: 100%;
+	height: 100%;
+	background-color: #382863;
+}
+.submissionSuccessOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(56, 40, 99, .95);
+}
+.submissionSuccessContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 2em;
+	width: 100%;
+	max-width: 400px;
+	background-color: #f5f5f5;
+}
+.formOverlay {
+	bottom: 0;
+	top: auto;
+}
+.bioOverlayContainer, .formOverlayContainer {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	padding: 4em;
+	width: 100%;
+	max-width: 900px;
+}
+
+// CLOSE MODAL BUTTON
+.closeModalButton {
+	border: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	outline: none;
+	right: 2em;
+	top: 10px;
+	cursor: pointer;
+	z-index: 999;
+}
+.closeModalButton span {
+	position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    top: 50%;
+    left: 50%;
+    margin-left: -15px;
+}
+.closeModalButton span:nth-child(2) {
+	transform: rotate(-45deg);
+}
+
+// FORM STYLES
+.formOverlayContainer input {
+	width: 100%;
+}
+.formOverlayContainer input[type=submit] {
+	width: auto;
+	clear: left;
+	text-transform: uppercase;
+	background-color: transparent;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	color: #fff;
+}
+.formOverlayContainer input {
+	float: left;
+	font-size: 13px;
+	width: 48%;
+	padding: 15px;
+	font-family: inherit;
+	margin-bottom: 4%;
+	border: none;
+}
+.formOverlayContainer label:nth-of-type(odd) input {
+	margin-right: 4%;
+}
+
+.pageTitle {
+	margin-bottom: 2em;
+}
+
+.textAlignCenter {
+	text-align: center;
+}
+
+.wpcf7:after, .wpcf7-form:after {
+	clear: both;
+	display: table;
+	content: "";
+}
+
+.copyright {
+	font-size: 14px;
+}
+
+.homeSplitContainer {
+	min-height: 100vh;
+}
+
+.homeSplitLeft {
+	box-shadow: 15px 0 25px #2a1958;
+    position: relative;
+    z-index: 10;
+}
+
+.logoShadow {
+	z-index: 1;
+    box-shadow: 25px 0 45px #2a1958;
+	position: absolute;
+    top: 50px;
+    left: 50%;
+    width: 300px;
+	height: 141.97px;
+    margin-left: -150px;
+}
+
+.homeSplitContainer .row {
+	height: 100%;
+	align-items: center;
+}
+.homeSplitLeft .colInner .row .col:first-of-type, .homeSplitRight .colInner .row .col:first-of-type {
+	margin-top: 150px;
+}
+
+.homeSplitRight .arrowRightList li {
+	margin-bottom: 10px;
+}
+
+.homeSplitContainer h2 {
+	margin-bottom: 0;
+}
+
+// CONTACT FORM 7
+body .wpcf7-response-output {
+	clear: left;
+	color: #fff;
+}

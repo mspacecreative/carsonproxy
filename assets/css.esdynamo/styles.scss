@@ -1,0 +1,113 @@
+// BRAND COLOURS
+$brandPurple: #462D7A;
+$brandGrey: #A5B7BE;
+
+@import "_normalize.min.scss";
+@import "_main.scss";
+// FLEXBOX
+@import "_flexboxgrid.min.scss";
+@import "_flexbox.scss";
+@import "_typography.scss";
+// HAMBURGER ICON
+@import "_hamburgers.scss";
+// HAV
+@import "_nav.scss";
+// STRUCTURE
+@import "_structure.scss";
+// IMAGES
+@import "_images.scss";
+// AOS
+@import "_aos.scss";
+
+* {
+	box-sizing: border-box;
+}
+
+body, html, .wrapper {
+	height: 100%;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.wrapper {
+	display: table;
+	width: 100%;
+}
+
+.wrapperInner {
+	margin: auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.logoContainer {
+	//max-width: 300px;
+	//margin: auto;
+	//width: 80%;
+	//position: relative;
+	//top: -30px;
+	position: absolute;
+    top: 50px;
+    left: 50%;
+    z-index: 999;
+    width: 300px;
+    margin-left: -150px;
+}
+
+.page.home .logoContainer a {
+	display: block;
+    background: #f5f5f5;
+    border-radius: 20px;
+    padding: 2em 2.25em;
+}
+
+.logoContainer a {
+	display: block;
+}
+
+// HOME PAGE
+.homeSplitRight {
+	background-color: $brandPurple;
+}
+.homeSplitLeft {
+	background-color: #f5f5f5;
+}
+.homeSplitLeft .colInner {
+	display: flex;
+	flex-direction: column;
+}
+.colInner {
+	height: 100%;
+	position: relative;
+	z-index: 1;
+	display: flex;
+    align-items: flex-end;
+}
+.homeSplitRight .colInner {
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
+}
+.homeSplitRight {
+	position: relative;
+}
+.topLeftTexture {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 300px;
+	height: 300px;
+}
+@media (min-width: 1920px) and (min-height: 900px) {
+	.colInner {
+		padding: 8em;
+	}
+	.homeSplitRight .colInner {
+		display: flex;
+	    flex-direction: column;
+	    justify-content: flex-end;
+		max-width: 900px;
+		align-items: flex-start;
+	}
+}
+
+// MEDIA QUERIES
+@import "_media-queries.scss";

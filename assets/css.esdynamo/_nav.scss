@@ -1,0 +1,120 @@
+// HAMBURGER MENU
+.hamburger {
+	transform: translateX(0);
+	transition: 0.5s ease-in-out;
+	z-index: 999999;
+	outline: none;
+	padding: 0;
+	margin-left: 10px;
+	position: absolute;
+	top: 2em;
+	right: 2em;
+}
+.hamburger.is-active:hover, .hamburger:hover {
+	opacity: 1;
+}
+.hamburger-box {
+	width: 25px;
+	height: 25px;
+	vertical-align: middle;
+}
+.hamburger-inner, .hamburger--spin .hamburger-inner::before, .hamburger--spin .hamburger-inner::after {
+	background-color: #fff;
+	width: 25px;
+	height: 2px;
+	transition: 0.25s ease-in-out;
+}
+.menuToggle:hover .hamburger-inner, 
+.menuToggle:hover .hamburger-inner::before, 
+.menuToggle:hover .hamburger-inner::after,
+.menuToggle:hover .hamburger.is-active .hamburger-inner,
+.menuToggle:hover .hamburger.is-active .hamburger-inner::before, 
+.menuToggle:hover .hamburger.is-active .hamburger-inner::after {
+	background-color: #fff;
+	transition: 0.25s ease-in-out;
+}
+.hamburger-inner {
+	margin-top: -1px;
+}
+.dark .hamburger-inner, 
+.dark .hamburger--spin .hamburger-inner::before, 
+.dark .hamburger--spin .hamburger-inner::after {
+	background-color: #000;
+}
+.hamburger.is-active .hamburger-inner, 
+.hamburger.is-active .hamburger-inner::before, 
+.hamburger.is-active .hamburger-inner::after,
+.dark .hamburger--spin.is-active .hamburger-inner::after {
+	background-color: #fff;
+}
+.hamburger-inner::before {
+	top: -7px;
+}
+.hamburger-inner::after {
+	bottom: -7px;
+}
+
+// NAV OVERLAY
+.menuOverlay {
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	display: none;
+	z-index: 99999;
+	background-color: $brandPurple;
+	overflow: auto;
+}
+.menuInner {
+	padding: 5em;
+	text-align: center;
+}
+.menuInner > ul:first-of-type {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+}
+.menuInner > ul:first-of-type li {
+	margin-bottom: 50px;
+}
+.socialButtons {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	justify-content: center;
+}
+.socialButtons li {
+	padding: 10px;
+}
+.menuInner li::marker {
+	height: 0;
+	width: 0;
+	font-size: 0;
+}
+.menuInner > ul:first-of-type a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 40px;
+	position: relative;
+	display: block;
+}
+.menu {
+	list-style: none;
+}
+.menuInner li a::after {
+	margin-top: 10px;
+	font-size: 20px;
+	color: $brandGrey;
+	display: block;
+}
+.workLink a::after {
+	content: "Influencing shareholders";
+}
+.aboutLink a::after {
+	content: "Industry Expertise";
+}
+.contactLink a::after {
+	content: "Request a call back";
+}
