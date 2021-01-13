@@ -52,3 +52,18 @@
 	</div>
 </div>
 <!-- FORM SUBMISSION STATEMENT -->
+
+<!-- CLIENTS OVERLAY -->
+<section class="clientsContainer">
+	<button class="closeModalButton dark">
+		<span>&nbsp;</span>
+		<span>&nbsp;</span>
+	</button>
+	<div class="innerContainer clientsInner">
+		<div>
+			<h1 class="textAlignCenter pageTitle">Clients</h1>
+			<?php include('partials/loop-clients.php'); ?>
+		</div>
+	</div>
+</section>
+<!-- CLIENTS OVERLAY -->

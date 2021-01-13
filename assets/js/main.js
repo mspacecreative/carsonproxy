@@ -1,6 +1,7 @@
 (function ($) {
 	
 	var menuOverlay = $('.menuOverlay'),
+	  clientOverlay = $('.clientsContainer'),
 	  hamburgerIcon = $('.hamburger');
 	function toggleMenu() {
 		$('body').toggleClass('menuOpen');
@@ -41,21 +42,31 @@
 		e.preventDefault();
 		toggleMenu();
 		
+		// ADD CLASS TO EACH MENU ITEM
+		/*
+		menuItem.each(function() {
+			menuItem.toggleClass('fadeDown');
+		});
+		
 		// ADD ANIMATION TO MENU ITEMS
+		/*
 		menuItem.each(function() {
 			setTimeout(function() {
 				menuItem.toggleClass('aos-animate');
 			}, 400);
 		});
+		*/
 	});
 	
 	$('.menu-item a').click(function() {
 		// ADD ANIMATION TO MENU ITEMS
+		/*
 		menuItem.each(function() {
 			setTimeout(function() {
 				menuItem.toggleClass('aos-animate');
 			}, 400);
 		});
+	*/
 	});
 	
 	// SMOOTH SCROLL
@@ -105,7 +116,16 @@
 			submitSuccess.slideUp();
 			menuOverlay.fadeOut();
 			hamburgerIcon.removeClass('is-active');
+			clientOverlay.slideUp();
 		}
+	});
+	
+	// SHOW WORK OVERLAY
+	$('.workLink').on('click', function() {
+		//clientOverlay.toggleClass('active');
+		menuOverlay.fadeOut('fast');
+		hamburgerIcon.removeClass('is-active');
+		clientOverlay.slideToggle('fast');
 	});
 	
 	// DISPLAY SUBMISSION SUCCESS STATEMENT
@@ -124,6 +144,7 @@
 		AOS.init();
 		
 		// ADD ANIMATION TO MENU ITEMS
+		/*
 		var counter = 0;
 		menuItem.each(function() {
 			$(this).attr({
@@ -131,6 +152,7 @@
 				'data-aos-delay': 250 - (counter++ * 100),
 			}).removeClass('aos-animate');
 		});
+		*/
 	});
 	
 })(jQuery);

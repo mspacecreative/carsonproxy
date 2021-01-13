@@ -65,3 +65,33 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
+.clientsContainer {
+	position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 999999;
+    top: 0;
+	left: 0;
+    background-color: #fff;
+    //display: none;
+    //align-items: center;
+	//visibility: hidden;
+	//opacity: 0;
+	//transition: all 0.5s ease-in-out;
+	display: none;
+}
+.clientsContainer.active {
+	visibility: visible;
+	opacity: 1;
+	transition: all 0.5s ease-in-out;
+}
+.clientsInner {
+	display: table;
+    width: 100%;
+	height: 100%;
+}
+.clientsInner > div {
+	display: table-cell;
+	vertical-align: middle;
+}

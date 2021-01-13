@@ -1,4 +1,4 @@
-.arrowDown {
+.arrowDown, .arrowDownContainer {
 	display: none;
 }
 
@@ -148,6 +148,9 @@
 		align-self: flex-end;
 		width: 20px;
 	}
+	.arrowDownContainer {
+		display: block;
+	}
 	.homeSplitLeft .colInner .row .col:first-of-type {
 		margin-top: 100px;
 	}
@@ -205,6 +208,13 @@
 		top: auto;
 		left: auto;
 		transform: none;
+	}
+}
+
+@media (min-width: 1024px) {
+	.descriptor {
+		position: relative;
+		top: -6px;
 	}
 }
 

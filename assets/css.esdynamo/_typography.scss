@@ -188,6 +188,9 @@ h2 {
     left: 50%;
     margin-left: -15px;
 }
+.closeModalButton.dark span {
+	background-color: $brandPurple;
+}
 .closeModalButton span:nth-child(2) {
 	transform: rotate(-45deg);
 }

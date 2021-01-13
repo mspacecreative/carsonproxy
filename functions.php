@@ -67,6 +67,9 @@ function carson_styles() {
     wp_register_script('aos-script', 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js', array('jquery'), null, true);
 	wp_enqueue_script('aos-script');
 	
+	wp_register_script('class-on-scroll', get_template_directory_uri() . '/assets/js/class-on-scroll.js', array('jquery'), null, true);
+	wp_enqueue_script( 'class-on-scroll' );
+	
 	wp_register_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), null, true);
 	wp_enqueue_script( 'main-js' );
 }
