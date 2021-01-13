@@ -125,7 +125,7 @@
 		//clientOverlay.toggleClass('active');
 		menuOverlay.fadeOut('fast');
 		hamburgerIcon.removeClass('is-active');
-		clientOverlay.slideToggle('fast');
+		clientOverlay.slideToggle();
 	});
 	
 	// DISPLAY SUBMISSION SUCCESS STATEMENT
