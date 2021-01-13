@@ -2118,6 +2118,7 @@ img {
 	left: 0;
 	background-color: #fff;
 	display: none;
+	overflow: auto;
 }
 
 .clientsContainer.active {
