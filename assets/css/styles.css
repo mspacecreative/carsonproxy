@@ -3243,7 +3243,9 @@ body, html, .wrapper {
 	.arrowRightList li::before {
 		top: 13px;
 	}
-	
+}
+
+@media (max-width: 1023px) {
 	.hamburger-inner, .hamburger--spin .hamburger-inner::before, .hamburger--spin .hamburger-inner::after {
 		background-color: #000;
 	}
