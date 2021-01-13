@@ -3,8 +3,11 @@
 
 				<div class="innerContainer">
 					<!-- copyright -->
-					<p>Carson Proxy Advisors Ltd.<br />
-					50 Carroll Street, Toronto, Ontario, M4M 3G3</p>
+					<p class="desktopOnly">Carson Proxy Advisors Ltd.<br />
+					50 Carroll Street, Toronto, Ontario, M4M 3G38&nbsp;&nbsp;|&nbsp;&nbsp;1-888-511-1228&nbsp;&nbsp;|&nbsp;&nbsp;416-804-0825</p>
+					<p class="mobileOnly">Carson Proxy Advisors Ltd.<br />
+					50 Carroll Street, Toronto, Ontario, M4M 3G3<br />
+					1-888-511-1228&nbsp;&nbsp;|&nbsp;416-804-0825</p>
 					<p class="copyright">
 						&copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>. <?php echo __('All rights reserved.'); ?></a>
 					</p>
