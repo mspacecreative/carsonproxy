@@ -105,12 +105,14 @@
 		bottom: 0;
 		position: relative;
 	}
+	/*
 	.page.home footer {
 		background-color: transparent;
 		padding: 25px 0;
 		width: auto;
 		position: absolute;
 	}
+	*/
 	footer .textAlignCenter {
 		text-align: right;
 	}
@@ -215,6 +217,58 @@
 	.descriptor {
 		position: relative;
 		top: -6px;
+	}
+	.bottomLeftTexture, .bottomRightTexture {
+		bottom: -98px;
+		z-index: 999999;
+	}
+	.footer::before {
+		background: #fff;
+	    position: absolute;
+	    height: 100%;
+	    width: 50%;
+	    top: 0;
+		left: 0;
+		content: "";
+	}
+	.footer::after {
+		background: #fff;
+	    position: absolute;
+	    height: 100%;
+	    width: 50%;
+	    top: 0;
+		right: 0;
+		opacity: .1;
+		content: "";
+	}
+	.footer .innerContainer {
+		display: flex;
+	    align-items: flex-end;
+	    justify-content: space-between;
+	    position: relative;
+	}
+	.footer p:first-child {
+		margin-bottom: 0;
+	    width: calc(50% - 4em);
+	    text-align: right;
+	    color: #333;
+	}
+	.footer p:last-child {
+		width: calc(50% - 4.5em);
+		text-align: left;
+	}
+	.footer {
+		position: relative;
+		width: 100%;
+	}
+	.homeSplitContainer {
+		min-height: calc(100vh - 98px);
+	}
+	.menuContainer {
+		display: flex;
+	    align-items: center;
+	    height: 100%;
+	    justify-content: center;
 	}
 }
 

@@ -1,10 +1,12 @@
 <!-- MENU OVERLAY -->
 <div class="menuOverlay">
-	<div class="menuInner light">
-		<?php 
-		echo carson_nav();
-		include 'social-media-buttons.php';
-		?>
+	<div class="menuContainer">
+		<div class="menuInner light">
+			<?php 
+			echo carson_nav();
+			include 'social-media-buttons.php';
+			?>
+		</div>
 	</div>
 </div>
 
