@@ -78,7 +78,7 @@
 }
 @keyframes fadeInUp {
     from {
-        transform: translateY(-50px);
+        transform: translateY(50px);
     }
 
     to {
@@ -88,7 +88,7 @@
 }
 @-webkit-keyframes fadeInUp {
     from {
-        transform: translateY(-50px);
+        transform: translateY(50px);
     }
 
     to {

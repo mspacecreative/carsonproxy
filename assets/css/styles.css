@@ -1892,7 +1892,7 @@ body .wpcf7-response-output {
 
 @keyframes fadeInUp {
 from {
-	transform: translateY(-50px);
+	transform: translateY(50px);
 }
 
 to {
@@ -1903,7 +1903,7 @@ to {
 
 @-webkit-keyframes fadeInUp {
 from {
-	transform: translateY(-50px);
+	transform: translateY(50px);
 }
 
 to {
