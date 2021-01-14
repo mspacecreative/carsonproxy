@@ -136,6 +136,14 @@
 		}
 	});
 	
+	var wpcf7Elm = document.querySelector( '.wpcf7' );
+ 
+	wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
+		if ( $('.sent').length ) {
+			submitSuccess.fadeIn();
+		}
+	}, false );
+	
 	submitSuccess.click(function() {
 		submitSuccess.slideUp();
 	});
