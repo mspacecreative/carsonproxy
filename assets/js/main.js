@@ -130,7 +130,7 @@
 	
 	// DISPLAY SUBMISSION SUCCESS STATEMENT
 	var submitSuccess = $('.submissionSuccessOverlay');
-	$(window).load( function() {
+	$(document).ajaxSuccess( function() {
 		if ( $('.sent').length ) {
 			submitSuccess.fadeIn();
 		}
