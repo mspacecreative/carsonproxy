@@ -1486,20 +1486,6 @@ h2 {
 	font-size: 2em;
 }
 
-/*
-.arrowRightList li::before {
-	content: "";
-	background-image: url(../img/icons/bullet.svg);
-	width: 14px;
-	height: 14px;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	position: absolute;
-	left: 0;
-	top: 15px;
-}
-*/
-
 .innerCircle {
 	fill: #462D7A;
 }
@@ -1930,15 +1916,15 @@ to {
 }
 
 .menu-item:nth-of-type(2) {
-	animation-delay: 400ms;
+	animation-delay: 300ms;
 }
 
 .menu-item:nth-of-type(3) {
-	animation-delay: 600ms;
+	animation-delay: 400ms;
 }
 
 .menu-item:nth-of-type(4) {
-	animation-delay: 800ms;
+	animation-delay: 500ms;
 }
 
 .menuInner > ul:first-of-type li {
