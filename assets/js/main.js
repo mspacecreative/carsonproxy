@@ -142,7 +142,7 @@
 		if ( $('.sent').length ) {
 			submitSuccess.fadeIn();
 		}
-		form.slideDown();
+		form.hide();
 	}, false );
 	
 	submitSuccess.click(function() {
