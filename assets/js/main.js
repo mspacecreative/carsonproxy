@@ -1,5 +1,25 @@
 (function ($) {
 	
+	// TRIGGER OVERLAYS
+	var clientsPage = 'clients',
+	    aboutPage = 'about',
+		contactPage = 'contact';
+	$(function() {
+		if( window.location.href.indexOf(clientsPage) > -1 ) {
+			$('a[href="#' + clientsPage + '"]').trigger('click');
+		} else if( window.location.href.indexOf(aboutPage) > -1 ) {
+			$('a[href="#' + aboutPage + '"]').trigger('click');
+		} else if( window.location.href.indexOf(contactPage) > -1 ) {
+			$('a[href="#' + contactPage + '"]').trigger('click');
+		}
+			
+		/*
+		$(window).bind("popstate", function () {
+			location.reload();
+		});
+		*/
+	});
+	
 	var menuOverlay = $('.menuOverlay'),
 	  clientOverlay = $('.clientsContainer'),
 	  hamburgerIcon = $('.hamburger');
@@ -21,16 +41,16 @@
 	// ADD ANIMATION TO MENU ITEM
 	var menuItem = $('.menu-item');
 	
-	$('.aboutLink a').click(function(e) {
-		e.preventDefault();
+	$('.aboutLink a').click(function() {
+		//e.preventDefault();
 		
 		menuOverlay.fadeToggle('fast');
 		bio.slideDown();
 		hamburgerIcon.removeClass('is-active');
 	});
 	
-	$('.contactLink a').click(function(e) {
-		e.preventDefault();
+	$('.contactLink a').click(function() {
+		//e.preventDefault();
 		
 		menuOverlay.fadeToggle('fast');
 		form.slideDown();
