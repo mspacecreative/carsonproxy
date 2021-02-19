@@ -1,5 +1,31 @@
 (function ($) {
 	
+	// TRIGGER OVERLAYS
+	var clientsPage = 'clients',
+	    aboutPage = 'about',
+		contactPage = 'contact',
+		base_url = '/',
+		site_tagline = 'Shareholder Communications',
+		site_title = 'Carson Proxy';
+	$(function() {
+		if( window.location.href.indexOf(clientsPage) > -1 ) {
+			$('a[href="#' + clientsPage + '"]').trigger('click');
+			history.pushState(null, null, '/clients');
+		} else if( window.location.href.indexOf(aboutPage) > -1 ) {
+			$('a[href="#' + aboutPage + '"]').trigger('click');
+			history.pushState(null, null, '/about');
+		} else if( window.location.href.indexOf(contactPage) > -1 ) {
+			$('a[href="#' + contactPage + '"]').trigger('click');
+			history.pushState(null, null, '/contact');
+		}
+			
+		/*
+		$(window).bind("popstate", function () {
+			location.reload();
+		});
+		*/
+	});
+	
 	var menuOverlay = $('.menuOverlay'),
 	  clientOverlay = $('.clientsContainer'),
 	  hamburgerIcon = $('.hamburger');
@@ -24,6 +50,10 @@
 	$('.aboutLink a').click(function(e) {
 		e.preventDefault();
 		
+		history.pushState(null, null, '/about');
+		
+		$(document).prop('title', 'Industry Expertise' + ' | ' + site_title);
+		
 		menuOverlay.fadeToggle('fast');
 		bio.slideDown();
 		hamburgerIcon.removeClass('is-active');
@@ -31,6 +61,10 @@
 	
 	$('.contactLink a').click(function(e) {
 		e.preventDefault();
+		
+		history.pushState(null, null, '/contact');
+		
+		$(document).prop('title', 'Contact' + ' | ' + site_title);
 		
 		menuOverlay.fadeToggle('fast');
 		form.slideDown();
@@ -106,6 +140,8 @@
 	
 	$('.closeModalButton').click(function() {
 		$(this).parent().slideToggle();
+		history.replaceState(null, null, base_url);
+		$(document).prop('title', site_title + ' | ' + site_tagline);
 	});
 	
 	// ESCAPE KEY CLICK TO ESCAPE
@@ -117,12 +153,20 @@
 			menuOverlay.fadeOut();
 			hamburgerIcon.removeClass('is-active');
 			clientOverlay.slideUp();
+			
+			history.replaceState(null, null, base_url);
+			$(document).prop('title', site_title + ' | ' + site_tagline);
 		}
 	});
 	
 	// SHOW WORK OVERLAY
-	$('.workLink').on('click', function() {
-		//clientOverlay.toggleClass('active');
+	$('.workLink').on('click', function(e) {
+		e.preventDefault();
+		
+		history.pushState(null, null, '/clients');
+		
+		$(document).prop('title', 'Influencing shareholders' + ' | ' + site_title);
+		
 		menuOverlay.fadeOut('fast');
 		hamburgerIcon.removeClass('is-active');
 		clientOverlay.slideToggle();
@@ -149,7 +193,24 @@
 		submitSuccess.slideUp();
 	});
 	
-	$(document).ready(function() {
+	$(function() {
+		// CLOSE OVERLAYS ON BACK BUTTON CLICK
+		if (window.history && window.history.pushState) {
+	        $(window).on('popstate', function () {
+	            clientOverlay.slideUp();
+				bio.slideUp();
+				form.slideUp();
+				
+				if ( window.location.href.indexOf('clients') > -1 ) {
+					clientOverlay.slideDown();
+				} else if ( window.location.href.indexOf('about') > -1 ) {
+					bio.slideDown();
+				} else if ( window.location.href.indexOf('contact') > -1 ) {
+					form.slideDown();
+				}
+	        });
+	    }
+		
 		AOS.init();
 		
 		// ADD ANIMATION TO MENU ITEMS

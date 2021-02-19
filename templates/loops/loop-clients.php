@@ -18,11 +18,11 @@ if ( $loop->have_posts() ) : ?>
 		if ( $logo ) : ?>
 		<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-6">
 			<?php if ( $stacked ): ?>
-			<div data-aos="fade-up" class="<?php echo $stacked ?>">
+			<div class="<?php echo $stacked ?>">
 				<?php echo $logoimg ?>
 			</div>
 			<?php else : ?>
-			<div data-aos="fade-up" class="brandContainer">
+			<div class="brandContainer">
 				<?php echo $logoimg ?>
 			</div>
 			<?php endif; ?>
