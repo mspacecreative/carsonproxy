@@ -47,8 +47,8 @@
 	// ADD ANIMATION TO MENU ITEM
 	var menuItem = $('.menu-item');
 	
-	$('.aboutLink a').click(function(e) {
-		e.preventDefault();
+	$('.aboutLink a').click(function() {
+		//e.preventDefault();
 		
 		history.pushState(null, null, '/about');
 		
@@ -59,8 +59,8 @@
 		hamburgerIcon.removeClass('is-active');
 	});
 	
-	$('.contactLink a').click(function(e) {
-		e.preventDefault();
+	$('.contactLink a').click(function() {
+		//e.preventDefault();
 		
 		history.pushState(null, null, '/contact');
 		
@@ -201,11 +201,11 @@
 				bio.slideUp();
 				form.slideUp();
 				
-				if ( window.location.href.indexOf('clients') > -1 ) {
+				if ( window.location.href.indexOf(clientsPage) > -1 ) {
 					clientOverlay.slideDown();
-				} else if ( window.location.href.indexOf('about') > -1 ) {
+				} else if ( window.location.href.indexOf(aboutPage) > -1 ) {
 					bio.slideDown();
-				} else if ( window.location.href.indexOf('contact') > -1 ) {
+				} else if ( window.location.href.indexOf(contactPage) > -1 ) {
 					form.slideDown();
 				}
 	        });
