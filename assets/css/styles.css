@@ -2058,6 +2058,10 @@ body {
 	height: 100%;
 }
 
+.modal-body {
+	overflow-x: hidden;
+}
+
 .light .pageTitle {
 	color: #999;
 }
