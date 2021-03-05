@@ -1529,9 +1529,15 @@ h2 {
 	left: 0;
 	z-index: 999999;
 	display: none;
+	flex-wrap: wrap;
+	align-items: center;
 	width: 100%;
 	height: 100%;
 	background-color: #382863;
+}
+
+.bioOverlay.show {
+	display: flex;
 }
 
 .submissionSuccessOverlay {
@@ -1561,14 +1567,39 @@ h2 {
 	top: auto;
 }
 
-.bioOverlayContainer, .formOverlayContainer {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 4em;
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999999;
+	background-color: #462D7A;
 	width: 100%;
+	height: 100%;
+	display: none;
+	flex-wrap: wrap;
+	align-items: center;
+	overflow: auto;
+}
+
+.clients .modal {
+	background-color: #fff;
+}
+
+.clients .modal .innerContainer {
+	max-width: 1280px;
+}
+
+.contact .modal .innerContainer, .about .modal .innerContainer {
 	max-width: 900px;
+}
+
+.about .modal .innerContainer {
+	max-width: 100%;
+	padding: 0;
+}
+
+.about .pageTitle {
+	display: none;
 }
 
 .closeModalButton {
@@ -1586,7 +1617,7 @@ h2 {
 	z-index: 999;
 }
 
-.closeModalButton span {
+.clients .closeModalButton span, .closeModalButton span {
 	position: absolute;
 	width: 30px;
 	height: 2px;
@@ -2015,6 +2046,34 @@ body {
 	background-color: #462D7A;
 }
 
+.clients .bioOverlay {
+	background-color: #fff;
+}
+
+.clients .bioOverlayContainer {
+	max-width: 1280px;
+}
+
+.about .bioOverlayContainer, .about .modal-body, .about .modal-body > .row {
+	height: 100%;
+}
+
+.light .pageTitle {
+	color: #999;
+}
+
+.clients .closeModalButton span {
+	background-color: #462D7A;
+}
+
+.about .bioOverlayContainer > .innerContainer, .contact .bioOverlayContainer > .innerContainer {
+	padding: 0;
+}
+
+.social {
+	margin-top: 25px;
+}
+
 .topLeftTexture img {
 	opacity: .5;
 }
@@ -2128,6 +2187,11 @@ img {
 .light p.desktopOnly a {
 	color: #333;
 	text-decoration: none;
+}
+
+.portrait img {
+	height: 100%;
+	object-fit: cover;
 }
 
 @media (max-width: 980px) {
@@ -3283,6 +3347,10 @@ body, html, .wrapper {
 	.hamburger-inner, .hamburger--spin .hamburger-inner::before, .hamburger--spin .hamburger-inner::after {
 		background-color: #000;
 	}
+	
+	.about .modal-body .col:last-of-type {
+		order: -1;
+	}
 }
 
 @media (max-width: 1024px) and (orientation: landscape) {
@@ -3311,6 +3379,10 @@ body, html, .wrapper {
 	footer {
 		background-color: #462D7A;
 		padding: 25px 0;
+	}
+	
+	.pageTitle {
+		margin-bottom: 1em;
 	}
 	
 	footer .textAlignCenter {
@@ -3376,6 +3448,11 @@ body, html, .wrapper {
 		padding: 4em 2em;
 	}
 	
+	.modal {
+		align-items: flex-start;
+		padding-top: 4em;
+	}
+	
 	.clientListContainer img {
 		padding: 20px 10px;
 	}
@@ -3428,13 +3505,6 @@ body, html, .wrapper {
 		z-index: 999999;
 	}
 	
-	.bioOverlayContainer, .formOverlayContainer {
-		top: 0;
-		transform: none;
-		left: 0;
-		padding: 4em 2em;
-	}
-	
 	.formOverlayContainer label:nth-of-type(odd) input {
 		margin-right: 0;
 	}
@@ -3459,6 +3529,11 @@ body, html, .wrapper {
 		left: 0;
 		overflow: auto;
 		z-index: 999999;
+	}
+	
+	.modal {
+		align-items: flex-start;
+		padding-top: 4em;
 	}
 	
 	.bottomLeftTexture {

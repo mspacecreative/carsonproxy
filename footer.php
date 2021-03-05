@@ -21,6 +21,7 @@
 		<!-- /wrapper -->
 		
 		<?php get_template_part('templates/overlays');
+		get_template_part('templates/modal');
 		
 		wp_footer(); ?>
 

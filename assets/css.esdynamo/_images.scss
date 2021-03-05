@@ -97,6 +97,10 @@ img {
 	color: #333;
 	text-decoration: none;
 }
+.portrait img {
+	height: 100%;
+    object-fit: cover;
+}
 
 @media (max-width: 980px) {
 	.light p.mobileOnly a {

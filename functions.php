@@ -67,10 +67,17 @@ function carson_styles() {
     wp_register_script('aos-script', 'https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js', array('jquery'), null, true);
 	wp_enqueue_script('aos-script');
 	
-	/*
-	wp_register_script('class-on-scroll', get_template_directory_uri() . '/assets/js/class-on-scroll.js', array('jquery'), null, true);
-	wp_enqueue_script( 'class-on-scroll' );
-	*/
+	wp_register_script('jsaddressscript', get_template_directory_uri() . '/assets/js/vendor/address.js', array('jquery'), null, true);
+    wp_enqueue_script('jsaddressscript');
+	
+	wp_register_script('custom-script-page', get_template_directory_uri() . '/assets/js/custom-page.js', array('jquery'), null, true);
+    // Localize the script with new data
+    $script_data_array = array(
+        'ajaxurl' => admin_url( 'admin-ajax.php' ),
+        'security' => wp_create_nonce( 'view_page' ),
+    );
+    wp_localize_script( 'custom-script-page', 'carsonproxy', $script_data_array );
+    wp_enqueue_script('custom-script-page');
 	
 	wp_register_script('main-js', get_template_directory_uri() . '/assets/js/main.js', array('jquery'), null, true);
 	wp_enqueue_script( 'main-js' );
@@ -319,3 +326,8 @@ add_filter( 'image_send_to_editor', 'remove_width_attribute', 10 ); // Remove wi
 
 // Remove Filters
 remove_filter( 'the_excerpt', 'wpautop' ); // Remove <p> tags from Excerpt altogether
+
+include 'functions/modal-page.php';
+include 'functions/shortcodes.php';
+include 'functions/routing.php';
+include 'functions/form.php';

@@ -9,28 +9,6 @@
 		</div>
 	</div>
 </div>
-
-<!-- BIO OVERLAY -->
-<div class="bioOverlay light">
-	<button class="closeModalButton"><span>&nbsp;</span>
-		<span>&nbsp;</span></button>
-	
-	<div class="bioOverlayContainer">
-
-		<!-- HEADING -->
-		<h2>Our Founder, Christine Carson</h2>
-		<!-- / HEADING -->
-					
-		<!-- BIO -->
-		<p>Christine’s career in creating and executing communications strategies and programs to achieve high-value outcomes is extensive and accomplished. She has advised clients on a wide variety of special situations and issues, including proxy battles, hostile take overs, M&amp;A, consent solicitations, corporate governance, executive compensation, and shareholder proposals. She has counseled numerous CEOs, corporate secretaries, corporate counsels, investor relations professionals and has spoken at industry conferences on the complexities of shareholder voting in Canada.</p>
-		
-		<p>Christine began her professional life at a stock transfer and trust company which lead to progressively higher levels of responsibility before being recruited to work as a strategist at Canada’s only (at that time) proxy solicitation firm.  Her work since then is a record of entrepreneurial initiative having helped launch two successful shareholder communication firms before becoming the sole founder of Carson Proxy.</p>
-		
-		<p><a class="social" href="https://www.linkedin.com/company/carson-proxy-advisors/" target="_blank"><i class="fa fa-linkedin"></i></a></p>
-		<!-- / BIO -->
-	</div>
-</div>
-		<!-- / BIO OVERLAY -->
 		
 <!-- REQUEST A CALL BACK FORM -->
 <div class="formOverlay light reveal">

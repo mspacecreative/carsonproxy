@@ -81,6 +81,9 @@
 	.hamburger--spin .hamburger-inner::after {
 		background-color: #000;
 	}
+	.about .modal-body .col:last-of-type {
+		order: -1;
+	}
 }
 
 @media (max-width: 1024px) and (orientation: landscape) {
@@ -109,6 +112,9 @@
 	footer {
 		background-color: $brandPurple;
 		padding: 25px 0;
+	}
+	.pageTitle {
+		margin-bottom: 1em;
 	}
 	footer .textAlignCenter {
 		text-align: left;
@@ -164,6 +170,10 @@
 	.colInner {
 	    padding: 4em 2em;
 	}
+	.modal {
+		align-items: flex-start;
+		padding-top: 4em;
+	}
 	.clientListContainer img {
 		padding: 20px 10px;
 	}
@@ -205,12 +215,6 @@
 		overflow: auto;
 		z-index: 999999;
 	}
-	.bioOverlayContainer, .formOverlayContainer {
-		top: 0;
-		transform: none;
-		left: 0;
-		padding: 4em 2em;
-	}
 	.formOverlayContainer label:nth-of-type(odd) input {
 		margin-right: 0;
 	}
@@ -233,6 +237,10 @@
 		left: 0;
 		overflow: auto;
 		z-index: 999999;
+	}
+	.modal {
+		align-items: flex-start;
+		padding-top: 4em;
 	}
 	.bottomLeftTexture {
 		left: auto;
