@@ -3354,6 +3354,7 @@ body, html, .wrapper {
 	
 	.about .modal-body .col:last-of-type {
 		order: -1;
+		margin-bottom: 30px;
 	}
 }
 
