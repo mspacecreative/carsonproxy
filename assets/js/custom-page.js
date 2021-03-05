@@ -95,7 +95,7 @@
 									response.headshot + 
 								'</div>' + 
 								'<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 row middle-lg middle-md">' + 
-									'<div style="padding: 3em;">' +
+									'<div style="padding: 0 3em;">' +
 										response.content + 
 									'</div>' +
 								'</div>' +
