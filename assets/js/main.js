@@ -49,7 +49,9 @@
 	$('.closeModalButton').click(function() {
 		modal.slideUp();
 		restoreUrl();
-		body.removeClass('clients about contact');
+		setTimeout(function() {
+			body.removeClass('clients about contact');
+		},500);
 	});
 	
 	// ESCAPE KEY CLICK TO ESCAPE
