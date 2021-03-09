@@ -17,6 +17,7 @@
 		closeButton = $('button.close'),
 		body = $('body'),
 		clientsPage = 'clients',
+		contactPage = 'contact',
 		aboutPage = 'about';
 				 
 		function ChangeUrl(page, url) {
@@ -30,17 +31,6 @@
 		        alert("Browser does not support HTML5.");
 		    }
 		}
-		
-		$('.menu-item a').each(function() {
-			$(this).click(function() {
-				var slug = $(this).attr('href').split('#')[1],
-				buttonTitle = $(this).text();
-				ChangeUrl(base_url, base_url + slug);
-				
-				document.title = buttonTitle + " | " + base_title;
-				
-			});
-		});
 		
 		function openModalPages() {
 				
@@ -61,6 +51,16 @@
 					
 				targetButton.trigger('click');
 				ChangeUrl('', url);
+			}
+		}
+		
+		function reopenModalPages() {
+			if( window.location.href.indexOf(aboutPage) != -1 ) {
+				$('.aboutLink a').trigger('click');
+			} else if( window.location.href.indexOf(clientsPage) != -1 ) {
+				$('.workLink a').trigger('click');
+			} else if( window.location.href.indexOf(contactPage) != -1 ) {
+				$('.contactLink a').trigger('click');
 			}
 		}
 		
@@ -137,9 +137,12 @@
 			
 			// CLOSE OVERLAYS ON BACK BUTTON CLICK
 			if (window.history && window.history.pushState) {
-		        $(window).on('popstate', function () {
-					openModalPages();
-		        });
+		       $(window).on('popstate', function () {
+			        modal.slideUp();
+					//location.reload();
+					document.title = base_title + " | " + base_description;
+					reopenModalPages();
+			   });
 		    }
 			
 			$('.menuInner li').find('a').map(function() {
