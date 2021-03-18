@@ -145,7 +145,7 @@
 			   });
 		    }
 			
-			$('.menuInner li').find('a').map(function() {
+			$('.menuInner > ul:first-of-type li').find('a').map(function() {
 				$(this).addClass('view-page');
 			});
 			
