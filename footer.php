@@ -4,7 +4,7 @@
 				<div class="innerContainer">
 					<!-- copyright -->
 					<p class="desktopOnly">Carson Proxy Advisors Ltd.<br />
-					50 Carroll Street, Toronto, Ontario, M4M 3G38&nbsp;&nbsp;|&nbsp;&nbsp;<a href="tel:18885111228">1-888-511-1228</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="tel:14168040825">416-804-0825</a></p>
+					50 Carroll Street, Toronto, Ontario, M4M 3G3&nbsp;&nbsp;|&nbsp;&nbsp;<a href="tel:18885111228">1-888-511-1228</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="tel:14168040825">416-804-0825</a></p>
 					<p class="mobileOnly">Carson Proxy Advisors Ltd.<br />
 					50 Carroll Street, Toronto, Ontario, M4M 3G3<br />
 					<a href="tel:18885111228">1-888-511-1228</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="tel:14168040825">416-804-0825</a></p>
