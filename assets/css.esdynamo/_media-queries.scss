@@ -38,6 +38,19 @@
 	.arrowDown {
 		display: none;
 	}
+	.menuInner > ul:first-of-type {
+		flex-wrap: wrap;
+	}
+	.menu-item {
+		flex: 0 0 50%;
+	}
+	.menuContainer {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		justify-content: center;
+		padding-bottom: 2em;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -152,12 +165,6 @@
 		width: 100%;
 		bottom: 0;
 		position: relative;
-	}
-	.menuContainer {
-		display: flex;
-		align-items: center;
-		height: 100%;
-		justify-content: center;
 	}
 	footer .textAlignCenter {
 		text-align: right;
