@@ -1891,6 +1891,7 @@ body .wpcf7-response-output {
 	color: #fff;
 	text-decoration: underline;
 	display: inline-block;
+	margin-top: 4em;
 	margin-bottom: 2em;
 	font-weight: 700;
 }
@@ -2084,10 +2085,6 @@ body {
 
 .about .bioOverlayContainer > .innerContainer, .contact .bioOverlayContainer > .innerContainer {
 	padding: 0;
-}
-
-.social {
-	margin-top: 25px;
 }
 
 .topLeftTexture img {

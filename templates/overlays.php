@@ -4,8 +4,8 @@
 		<div class="menuInner light">
 			<?php 
 			echo carson_nav();
-			echo '<a title="Careers" href="' . home_url('careers') . '" data-id="133" class="view-page careersLink">' . __('Careers') . '</a>';
 			include 'social-media-buttons.php';
+			echo '<a title="Careers" href="' . home_url('careers') . '" data-id="133" class="view-page careersLink">' . __('Careers') . '</a>';
 			?>
 		</div>
 	</div>
