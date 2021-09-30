@@ -18,6 +18,7 @@
 		body = $('body'),
 		clientsPage = 'clients',
 		contactPage = 'contact',
+		careersPage = 'careers',
 		aboutPage = 'about';
 				 
 		function ChangeUrl(page, url) {
@@ -61,6 +62,8 @@
 				$('.workLink a').trigger('click');
 			} else if( window.location.href.indexOf(contactPage) != -1 ) {
 				$('.contactLink a').trigger('click');
+			} else if( window.location.href.indexOf(careersPage) != -1 ) {
+				$('.careersLink a').trigger('click');
 			}
 		}
 		
@@ -137,7 +140,7 @@
 			
 			$('.careersLink').on('click', function(e) {
 				e.preventDefault();
-				body.addClass('careers').removeClass('clients about contactt');
+				body.addClass('careers').removeClass('clients about contact');
 			});
 			
 			// CLOSE OVERLAYS ON BACK BUTTON CLICK

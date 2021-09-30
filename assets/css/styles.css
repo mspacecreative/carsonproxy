@@ -1581,7 +1581,7 @@ h2 {
 	overflow: auto;
 }
 
-.clients .modal {
+.clients .modal, .careers .modal {
 	background-color: #fff;
 }
 
