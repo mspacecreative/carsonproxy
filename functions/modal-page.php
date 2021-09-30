@@ -21,7 +21,7 @@ function load_page_by_ajax_callback() {
             $image = wp_get_attachment_image( $portrait, $size );
             
         	$arr_response = array(
-                //'title' => get_the_title(),
+                'title' => get_the_title(),
                 'content' => $modal_content,
                 'headshot' => $image,
                 //'left_column' => get_field('left_column'),
