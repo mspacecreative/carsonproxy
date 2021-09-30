@@ -1887,6 +1887,13 @@ body .wpcf7-response-output {
 	bottom: -7px;
 }
 
+.careersLink {
+	color: #fff;
+	text-decoration: underline;
+	display: inline-block;
+	margin-bottom: 2em;
+}
+
 .menuOverlay {
 	top: 0;
 	left: 0;
