@@ -13,5 +13,8 @@ function redirect_page() {
 	} elseif ( is_page('contact') ) {
 		wp_redirect( $redirectURL, 301 );
     	exit;
+	} elseif ( is_page('careers') ) {
+		wp_redirect( $redirectURL, 301 );
+    	exit;
 	}
 }
