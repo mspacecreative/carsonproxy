@@ -131,11 +131,13 @@
 			$('.aboutLink').on('click', function(e) {
 				e.preventDefault();
 				body.addClass('about').removeClass('clients contact careers');
+				modal.addClass('light');
 			});
 			
 			$('.contactLink').on('click', function(e) {
 				e.preventDefault();
 				body.addClass('contact').removeClass('clients about careers');
+				modal.addClass('light');
 			});
 			
 			$('.careersLink').on('click', function(e) {

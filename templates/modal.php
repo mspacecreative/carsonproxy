@@ -1,5 +1,5 @@
 <!-- MODAL OVERLAY -->
-<div class="modal light">
+<div class="modal">
 	
 	<!-- CLOSE BUTTON -->
 	<button class="closeModalButton">
