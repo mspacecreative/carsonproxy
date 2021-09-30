@@ -122,17 +122,22 @@
 			
 			$('.workLink').on('click', function(e) {
 				e.preventDefault();
-				body.addClass('clients').removeClass('about contact');
+				body.addClass('clients').removeClass('about contact careers');
 			});
 			
 			$('.aboutLink').on('click', function(e) {
 				e.preventDefault();
-				body.addClass('about').removeClass('clients contact');
+				body.addClass('about').removeClass('clients contact careers');
 			});
 			
 			$('.contactLink').on('click', function(e) {
 				e.preventDefault();
-				body.addClass('contact').removeClass('clients about');
+				body.addClass('contact').removeClass('clients about careers');
+			});
+			
+			$('.careersLink').on('click', function(e) {
+				e.preventDefault();
+				body.addClass('careers').removeClass('clients about contactt');
 			});
 			
 			// CLOSE OVERLAYS ON BACK BUTTON CLICK
