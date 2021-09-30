@@ -188,7 +188,8 @@ h2 {
 	cursor: pointer;
 	z-index: 999;
 }
-.clients .closeModalButton span, .closeModalButton span {
+.clients .closeModalButton span,
+.closeModalButton span {
 	position: absolute;
     width: 30px;
     height: 2px;
@@ -198,7 +199,8 @@ h2 {
     left: 50%;
     margin-left: -15px;
 }
-.closeModalButton.dark span {
+.closeModalButton.dark span,
+.careers .closeModalButton span {
 	background-color: $brandPurple;
 }
 .closeModalButton span:nth-child(2) {

@@ -1628,7 +1628,7 @@ h2 {
 	margin-left: -15px;
 }
 
-.closeModalButton.dark span {
+.closeModalButton.dark span, .careers .closeModalButton span {
 	background-color: #462D7A;
 }
 
