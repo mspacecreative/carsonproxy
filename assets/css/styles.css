@@ -1602,6 +1602,10 @@ h2 {
 	display: none;
 }
 
+.arrowRightList li:nth-of-type(even) {
+	color: #949494;
+}
+
 .closeModalButton {
 	border: none;
 	margin: 0;
