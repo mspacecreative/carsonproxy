@@ -4,6 +4,7 @@
 		<div class="menuInner light">
 			<?php 
 			echo carson_nav();
+			echo '<a href="' . home_url('careers') . '" data-id="133" class="view-page">' . __('Careers') . '</a>';
 			include 'social-media-buttons.php';
 			?>
 		</div>
