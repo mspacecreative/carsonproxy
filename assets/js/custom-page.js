@@ -104,14 +104,6 @@
 								'</div>' +
 							'</div>'
 						);
-					} else if ( response.title && response.content ) {
-						$('.modal .pageTitle').text(pageTitle);
-						$('.modal .modal-body').html(
-							'<h1>' + response.title + '</h1>' +
-							'<div>' + 
-								response.content + 
-							'</div>'
-						);
 					} else if ( response.content ) {
 						//$('.modal .pageTitle').text(pageTitle);
 						$('.modal .modal-body').html(
