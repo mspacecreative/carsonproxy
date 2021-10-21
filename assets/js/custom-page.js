@@ -105,7 +105,7 @@
 							'</div>'
 						);
 					} else if ( response.content ) {
-						//$('.modal .pageTitle').text(pageTitle);
+						$('.modal .pageTitle').text(pageTitle);
 						$('.modal .modal-body').html(
 							'<div>' + 
 								response.content + 
