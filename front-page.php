@@ -76,6 +76,8 @@ get_header(); ?>
 									<li>Corporate governance consulting</li>
 									<li>Information agent services</li>
 									<li>Tender offers</li>
+									<li>Debtholder Engagement</li>
+									<li>Consent Solicitation</li>
 								</ul>
 								<!-- / UNORDERED LIST -->
 								
