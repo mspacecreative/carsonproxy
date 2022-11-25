@@ -5,23 +5,38 @@ get_header(); ?>
 			<div class="row gutter_space_0 homeSplitContainer">
 				
 				<!-- LEFT COLUMN -->
-				<div class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 homeSplitLeft">
+				<div class="col col-lg-8 col-md-8 col-sm-12 col-xs-12 homeSplitLeft">
 					
-					<!-- BOTTOM LEFT TEXTURE -->
+					<!-- BOTTOM LEFT TEXTURE
 					<div class="bottomLeftTexture">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/textures/bottom-left-texture.svg">
 					</div>
-					<!-- / BOTTOM LEFT TEXTURE -->
+					BOTTOM LEFT TEXTURE -->
 					
 					<!-- COL INNER -->
 					<div class="colInner">
 						
-						<div class="row">
+						<div class="row bottom-lg bottom-md">
 							
-							<div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="col col-lg-7 col-md-7 col-sm-12 col-xs-12">
 								<!-- DESCRIPTOR -->
 								<h1 class="descriptor">We are a full-service shareholder communications and corporate governance consulting firm that works across all sectors in the Canadian market.</h1>
 								<!-- / DESCRIPTOR -->
+							</div>
+
+							<div class="col col-lg-5 col-md-5 col-sm-12 col-xs-12">
+								<!-- UNORDERED LIST -->
+								<ul class="arrowRightList">
+									<li>Investor intelligence</li>
+									<li>Shareholder engagement</li>
+									<li>Proxy solicitation</li>
+									<li>Corporate governance consulting</li>
+									<li>Information agent services</li>
+									<li>Tender offers</li>
+									<li>Debtholder Engagement</li>
+									<li>Consent Solicitation</li>
+								</ul>
+								<!-- / UNORDERED LIST -->
 							</div>
 							
 							<!-- ARROW DOWN -->
@@ -50,9 +65,9 @@ get_header(); ?>
 				<!-- / LEFT COLUMN -->
 				
 				<!-- RIGHT COLUMN -->
-				<div id="rightColumn" class="col col-lg-6 col-md-6 col-sm-12 col-xs-12 homeSplitRight light">
+				<div id="rightColumn" class="col col-lg-4 col-md-4 col-sm-12 col-xs-12 homeSplitRight light">
 					
-					<!-- TEXTURES -->
+					<!-- TEXTURES
 					<div class="topLeftTexture">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/textures/top-left-texture.png" width="300" height="auto">
 					</div>
@@ -60,6 +75,7 @@ get_header(); ?>
 					<div class="bottomRightTexture">
 						<img src="<?php echo get_template_directory_uri(); ?>/assets/img/textures/bottom-right-texture.png" width="300" height="auto">
 					</div>
+					-->
 					
 					<!-- COL INNER -->
 					<div class="colInner">
@@ -68,18 +84,21 @@ get_header(); ?>
 							
 							<div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								
-								<!-- UNORDERED LIST -->
-								<ul class="arrowRightList">
-									<li>Investor intelligence</li>
-									<li>Shareholder engagement</li>
-									<li>Proxy solicitation</li>
-									<li>Corporate governance consulting</li>
-									<li>Information agent services</li>
-									<li>Tender offers</li>
-									<li>Debtholder Engagement</li>
-									<li>Consent Solicitation</li>
-								</ul>
-								<!-- / UNORDERED LIST -->
+								<!-- LOGO -->
+								<div class="desktop-logo-container">
+									<a href="<?php echo home_url(); ?>" style="display: block;">
+										<?php include 'assets/img/logo-white.php'; ?>
+									</a>
+								</div>
+								<!-- / LOGO -->
+
+								<div class="menuInner light">
+									<?php 
+									echo carson_nav();
+									include 'templates/social-media-buttons.php';
+									echo '<a title="Careers" href="' . home_url('careers') . '" data-id="134" class="view-page careersLink">' . __('Careers') . '</a>';
+									?>
+								</div>
 								
 							</div>
 							

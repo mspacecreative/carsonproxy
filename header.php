@@ -38,9 +38,12 @@
 
         <div class="wrapper">
 			
-			<!-- BRANDING -->
-			<div class="logoContainer"><a href="<?php echo home_url(); ?>">
-			<img src="<?php echo get_template_directory_uri(); ?>/assets/img/carson-proxy-branding-r1.svg"></a></div>
+			<!-- BRANDING
+			<div class="logoContainer">
+				<a href="<?php echo home_url(); ?>">
+					<?php include 'assets/img/logo-white.php'; ?>
+				</a>
+			</div>
 			
 			<div class="logoShadow">&nbsp;</div>
-			<!-- / BRANDING -->
+			BRANDING -->

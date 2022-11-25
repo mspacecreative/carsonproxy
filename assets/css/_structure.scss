@@ -51,6 +51,12 @@ body {
 .contact .bioOverlayContainer > .innerContainer {
 	padding: 0;
 }
-.social {
-	//margin-top: 25px;
+
+.homeSplitRight .colInner {
+	align-items: flex-start;
+	justify-content: center;
+}
+
+svg {
+	width: 100%;
 }

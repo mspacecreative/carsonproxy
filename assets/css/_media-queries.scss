@@ -38,10 +38,6 @@
 	.arrowDown {
 		display: none;
 	}
-	.menuInner > ul:first-of-type {
-		//flex-wrap: wrap;
-		//flex-direction: row;
-	}
 	.menu-item {
 		flex: 0 0 50%;
 	}
@@ -274,11 +270,14 @@
 		position: relative;
 		top: -6px;
 	}
+	.hamburger {
+		display: none;
+	}
 	.footer::before {
 		background: #fff;
 	    position: absolute;
 	    height: 100%;
-	    width: 50%;
+	    width: 66.666%;
 	    top: 0;
 		left: 0;
 		content: "";
@@ -298,16 +297,18 @@
 	    align-items: flex-end;
 	    justify-content: space-between;
 	    position: relative;
+		padding-left: 4em;
+		padding-right: 4em;
 	}
 	.footer p:first-child {
 		margin-bottom: 0;
-	    width: calc(50% - 4em);
-	    text-align: right;
+	    width: calc(66.666% - 4em);
+	    ///text-align: right;
 	    color: #333;
 	}
 	.footer p:last-child {
-		width: calc(50% - 4.5em);
-		text-align: left;
+		//width: calc(50% - 4.5em);
+		text-align: right;
 	}
 	.footer {
 		position: relative;

@@ -1298,7 +1298,6 @@ ul {
 .descriptor {
   margin-top: auto;
   margin-bottom: 0;
-  text-align: right;
   max-width: 450px;
   font-size: 2.25em;
   line-height: 1.5em;
@@ -1364,6 +1363,10 @@ h2 {
   position: relative;
   margin-bottom: 20px;
   font-size: 25px;
+}
+
+.arrowRightList li:last-of-type {
+  margin-bottom: 12px;
 }
 
 .innerCircle {
@@ -1600,13 +1603,6 @@ h2 {
 
 .homeSplitContainer .row {
   height: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.homeSplitLeft .colInner .row .col:first-of-type, .homeSplitRight .colInner .row .col:first-of-type {
-  margin-top: 150px;
 }
 
 .homeSplitRight .arrowRightList li {
@@ -1972,6 +1968,24 @@ body .wpcf7-response-output {
   content: "Request a call back";
 }
 
+.desktop-logo-container {
+  max-width: 200px;
+  margin: auto;
+}
+
+.colInner .menuInner > ul:first-of-type a {
+  font-size: 30px;
+}
+
+.colInner .menuInner {
+  padding: 0;
+  margin-top: 50px;
+}
+
+.colInner .menuInner > ul:first-of-type li {
+  margin-bottom: 25px;
+}
+
 .section {
   padding-top: 4em;
   padding-bottom: 4em;
@@ -2035,6 +2049,19 @@ body {
 .about .bioOverlayContainer > .innerContainer,
 .contact .bioOverlayContainer > .innerContainer {
   padding: 0;
+}
+
+.homeSplitRight .colInner {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+svg {
+  width: 100%;
 }
 
 .topLeftTexture img {
@@ -3799,11 +3826,14 @@ body, html, .wrapper {
     position: relative;
     top: -6px;
   }
+  .hamburger {
+    display: none;
+  }
   .footer::before {
     background: #fff;
     position: absolute;
     height: 100%;
-    width: 50%;
+    width: 66.666%;
     top: 0;
     left: 0;
     content: "";
@@ -3829,16 +3859,16 @@ body, html, .wrapper {
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: relative;
+    padding-left: 4em;
+    padding-right: 4em;
   }
   .footer p:first-child {
     margin-bottom: 0;
-    width: calc(50% - 4em);
-    text-align: right;
+    width: calc(66.666% - 4em);
     color: #333;
   }
   .footer p:last-child {
-    width: calc(50% - 4.5em);
-    text-align: left;
+    text-align: right;
   }
   .footer {
     position: relative;

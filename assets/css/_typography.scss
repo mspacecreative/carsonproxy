@@ -16,7 +16,7 @@ ul {
 .descriptor {
 	margin-top: auto;
 	margin-bottom: 0;
-	text-align: right;
+	//text-align: right;
 	max-width: 450px;
 	font-size: 2.25em;
 	line-height: 1.5em;
@@ -70,6 +70,9 @@ h2 {
 	//padding-left: 30px;
 	margin-bottom: 20px;
 	font-size: 25px;
+}
+.arrowRightList li:last-of-type {
+	margin-bottom: 12px;
 }
 .innerCircle {
 	fill: $brandPurple;
@@ -274,10 +277,6 @@ h2 {
 
 .homeSplitContainer .row {
 	height: 100%;
-	align-items: center;
-}
-.homeSplitLeft .colInner .row .col:first-of-type, .homeSplitRight .colInner .row .col:first-of-type {
-	margin-top: 150px;
 }
 
 .homeSplitRight .arrowRightList li {

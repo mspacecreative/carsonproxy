@@ -171,3 +171,21 @@
 .contactLink a::after {
 	content: "Request a call back";
 }
+
+.desktop-logo-container {
+	max-width: 200px;
+	margin: auto;
+}
+
+.colInner .menuInner > ul:first-of-type a {
+	font-size: 30px;
+}
+
+.colInner .menuInner {
+	padding: 0;
+	margin-top: 50px;
+}
+
+.colInner .menuInner > ul:first-of-type li {
+	margin-bottom: 25px;
+}
