@@ -1986,6 +1986,10 @@ body .wpcf7-response-output {
   margin-bottom: 25px;
 }
 
+.colInner .careersLink {
+  margin-bottom: 0;
+}
+
 .section {
   padding-top: 4em;
   padding-bottom: 4em;
