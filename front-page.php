@@ -16,7 +16,7 @@ get_header(); ?>
 					<!-- COL INNER -->
 					<div class="colInner">
 						
-						<div class="row bottom-lg bottom-md">
+						<div class="row">
 							
 							<div class="col col-lg-7 col-md-7 col-sm-12 col-xs-12">
 								<!-- DESCRIPTOR -->
