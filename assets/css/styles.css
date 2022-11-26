@@ -3593,6 +3593,9 @@ body, html, .wrapper {
   .arrowRightList li {
     font-size: 28px;
   }
+  .hide-on-mobile {
+    display: none;
+  }
   .descriptor {
     font-size: 32px;
     line-height: 1.7em;
@@ -3829,6 +3832,9 @@ body, html, .wrapper {
   .descriptor {
     position: relative;
     top: -6px;
+  }
+  .hide-on-desktop {
+    display: none;
   }
   .hamburger {
     display: none;
