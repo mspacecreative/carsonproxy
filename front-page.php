@@ -85,7 +85,7 @@ get_header(); ?>
 							<div class="col col-lg-12 col-md-12 col-sm-12 col-xs-12">
 								
 								<!-- LOGO -->
-								<div class="desktop-logo-container">
+								<div class="desktop-logo-container hide-on-mobile">
 									<a href="<?php echo home_url(); ?>" style="display: block;">
 										<?php include 'assets/img/logo-white.php'; ?>
 									</a>

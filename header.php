@@ -38,12 +38,12 @@
 
         <div class="wrapper">
 			
-			<!-- BRANDING
-			<div class="logoContainer">
+			<!-- BRANDING -->
+			<div class="logoContainer hide-on-desktop" style="max-width: 175px;">
 				<a href="<?php echo home_url(); ?>">
-					<?php include 'assets/img/logo-white.php'; ?>
+					<?php include 'assets/img/logo.php'; ?>
 				</a>
 			</div>
-			
+			<!--
 			<div class="logoShadow">&nbsp;</div>
 			BRANDING -->
