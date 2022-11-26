@@ -3609,8 +3609,7 @@ body, html, .wrapper {
   .light p.mobileOnly {
     display: block;
     color: #333;
-    text-align: right;
-    width: calc(50% - 4em);
+    width: auto;
     margin-bottom: 0;
   }
 }
