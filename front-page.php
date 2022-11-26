@@ -24,7 +24,7 @@ get_header(); ?>
 								<!-- / DESCRIPTOR -->
 							</div>
 
-							<div class="col col-lg-5 col-md-5 col-sm-12 col-xs-12">
+							<div class="col col-lg-5 col-md-5 col-sm-12 col-xs-12 hide-on-mobile">
 								<!-- UNORDERED LIST -->
 								<ul class="arrowRightList">
 									<li>Investor intelligence</li>
@@ -91,6 +91,21 @@ get_header(); ?>
 									</a>
 								</div>
 								<!-- / LOGO -->
+
+								<div class="col col-lg-5 col-md-5 col-sm-12 col-xs-12 hide-on-desktop">
+									<!-- UNORDERED LIST -->
+									<ul class="arrowRightList">
+										<li>Investor intelligence</li>
+										<li>Shareholder engagement</li>
+										<li>Proxy solicitation</li>
+										<li>Corporate governance consulting</li>
+										<li>Information agent services</li>
+										<li>Tender offers</li>
+										<li>Debtholder Engagement</li>
+										<li>Consent Solicitation</li>
+									</ul>
+									<!-- / UNORDERED LIST -->
+								</div>
 
 								<div class="menuInner light">
 									<?php 
