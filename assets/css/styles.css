@@ -3593,9 +3593,6 @@ body, html, .wrapper {
   .arrowRightList li {
     font-size: 28px;
   }
-  .hide-on-mobile {
-    display: none;
-  }
   .descriptor {
     font-size: 32px;
     line-height: 1.7em;
@@ -3632,6 +3629,9 @@ body, html, .wrapper {
   .hamburger--spin .hamburger-inner::before,
   .hamburger--spin .hamburger-inner::after {
     background-color: #000;
+  }
+  .hide-on-mobile {
+    display: none;
   }
   .about .modal-body .col:last-of-type {
     -webkit-box-ordinal-group: 0;

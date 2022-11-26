@@ -54,9 +54,6 @@
 	.arrowRightList li {
 		font-size: 28px;
 	}
-	.hide-on-mobile {
-		display: none;
-	}
 	.descriptor {
 		font-size: 32px;
 		line-height: 1.7em;
@@ -93,6 +90,10 @@
 	.hamburger--spin .hamburger-inner::before, 
 	.hamburger--spin .hamburger-inner::after {
 		background-color: #000;
+	}
+	
+	.hide-on-mobile {
+		display: none;
 	}
 	.about .modal-body .col:last-of-type {
 		order: -1;
