@@ -107,7 +107,7 @@ get_header(); ?>
 									<!-- / UNORDERED LIST -->
 								</div>
 
-								<div class="menuInner light">
+								<div class="menuInner light hide-on-mobile">
 									<?php 
 									echo carson_nav();
 									include 'templates/social-media-buttons.php';
