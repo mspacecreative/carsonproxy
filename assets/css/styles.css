@@ -3744,9 +3744,6 @@ body, html, .wrapper {
   .smaller {
     max-width: 90px;
   }
-  .homeSplitLeft, .homeSplitRight {
-    min-height: 100vh;
-  }
   .arrowDown {
     display: block;
     -ms-flex-item-align: end;
