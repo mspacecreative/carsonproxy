@@ -93,6 +93,9 @@
 		background-color: #000;
 	}
 	
+	.homeSplitLeft .colInner .row .col:first-of-type {
+		margin-top: 100px;
+	}
 	.hide-on-mobile {
 		display: none;
 	}
@@ -208,9 +211,6 @@
 	}
 	.arrowDownContainer {
 		display: block;
-	}
-	.homeSplitLeft .colInner .row .col:first-of-type {
-		margin-top: 100px;
 	}
 	.homeSplitLeft .colInner .row .col:last-of-type {
 		display: flex;

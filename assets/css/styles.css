@@ -3626,6 +3626,9 @@ body, html, .wrapper {
   .hamburger--spin .hamburger-inner::after {
     background-color: #000;
   }
+  .homeSplitLeft .colInner .row .col:first-of-type {
+    margin-top: 100px;
+  }
   .hide-on-mobile {
     display: none;
   }
@@ -3752,9 +3755,6 @@ body, html, .wrapper {
   }
   .arrowDownContainer {
     display: block;
-  }
-  .homeSplitLeft .colInner .row .col:first-of-type {
-    margin-top: 100px;
   }
   .homeSplitLeft .colInner .row .col:last-of-type {
     display: -webkit-box;
